@@ -9,9 +9,9 @@
 }
 
 header {
-  background-color: lightgray;
+  background-color: lightslategray;
   padding: 1rem 0;
-  border-bottom: 2px solid lightslategray;
+  border-bottom: 2px solid lightgray;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -28,6 +28,14 @@ nav {
   justify-content: space-between;
 }
 
+a h1 {
+  color: white;
+}
+
+a h1:hover {
+  color: lightgray;
+}
+
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
@@ -36,8 +44,8 @@ nav {
   cursor: pointer;
 }
 
-.open{
-  display: flex!important;
+.open {
+  display: flex !important;
 }
 
 /* NAV LINKS */
@@ -45,11 +53,11 @@ nav {
   display: none;
   justify-content: center;
   padding: 1rem 0;
-  background-color: lightsteelblue;
+  background-color: lightslategray;
   position: fixed;
   top: 60px;
   width: 100%;
-  border-bottom: 2px solid lightslategray;
+  border-bottom: 2px solid lightgray;
 }
 
 .nav-links ul {
@@ -59,10 +67,22 @@ nav {
   align-items: center;
 }
 
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: lightgray;
+}
+
 .line {
   width: 30px;
   height: 3px;
-  background-color: blue;
+  background-color: white;
+}
+
+.line:hover {
+  background-color: lightgray;
 }
 
 nav ul {
@@ -96,9 +116,15 @@ nav ul {
 }
 
 .hero-content a {
-  background-color: lightgray;
+  background-color: lightslategrey;
+  color: white;
   padding: 10px;
   border-radius: 10px;
+}
+
+.hero-content a:hover {
+  background-color: lightgray;
+  color: lightslategray;
 }
 
 #explore {
@@ -117,7 +143,8 @@ nav ul {
 }
 
 .restoran {
-  background-color: lightgray;
+  background-color: lightslategray;
+  color: white;
   border-radius: 1rem;
 }
 
@@ -129,9 +156,10 @@ nav ul {
   position: absolute;
   left: 0;
   top: 15px;
-  background-color: lightgray;
+  background-color: lightslategray;
   padding: 5px;
   font-weight: bold;
+  color: white;
 }
 
 .img-content img {
@@ -141,6 +169,7 @@ nav ul {
 
 .info-content {
   padding: 1rem;
+  text-align: center;
 }
 
 .info-content h2 {
@@ -154,27 +183,32 @@ nav ul {
 }
 
 @media screen and (max-width: 768px) {
-  nav{
+  nav {
     justify-content: start;
     gap: 1rem;
   }
 
- .hamburger{
-  display: flex;
- }
+  .hamburger {
+    display: flex;
+  }
 
- nav ul{
-  display: none;
- }
+  nav ul {
+    display: none;
+  }
 }
 
-.footer{
-  background-color: lightgray;
+.footer {
+  background-color: lightslategray;
   padding: 1rem 0;
-  border-top: 2px solid lightslategray;
+  border-top: 2px solid white;
 }
 
-.footer p{
+.footer p {
   text-align: center;
   font-weight: bold;
+  color: white;
+}
+
+.footer p:hover {
+  color: lightgray;
 }
